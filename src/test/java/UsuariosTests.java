@@ -54,4 +54,11 @@ if (Objects.equals(tipoTest, "SemDado")) {
 //https://www.youtube.com/watch?v=EUbb5TyJbE8
 
 //link 1: https://github.com/rest-assured/rest-assured/wiki/Usage
-
+/*
+como ter arquivo externo -- sim
+vale a pena ter testes que nao rodam com frequencia? sim, tenta deletar se for stg prod nao
+pq as vezes da erro L39 auth -- a validar o Response response =
+como ter mais tags--rodar coisas especificas
+tem como rodar no terminal?
+nao pode ter varias classes
+ */
