@@ -1,34 +1,68 @@
-# Testes_Automatizados_API
+<a name="readme-top"></a>
+# Testes Automatizados de API em Java
 
-Git init na pasta do projeto
-git add .
-git add README.md
-git commit -m "first commit"
-* git config --global --edit para editar o seu usuario e para o repo (Não funcionou)
+Este projeto tem o intuito de aprender a configurar e desenvolver automação de API em Java.
 
-Para Vim
+## Inicializando
+
+Estas instruções fornecerão uma cópia do projeto em execução em sua máquina local para fins de desenvolvimento e teste.
+
+### Pré requisitos
+
+* Ter conhecimento das funcionalidades da API de [teste]: (http://cgitar.juliodelima.com.br/)
+* Ter inicializado e configurado um repositório git
+* Ter instalado [IntelliJ] (https://www.jetbrains.com/idea/download/)
+* Baixar [JDK 8] (https://www.oracle.com/br/java/technologies/javase/javase8u211-later-archive-downloads.html)
+
+### Instalando
+
+Para um novo projeto no intelliJ, clicar em `New Project`, criar um nome, ajustar pasta do projeto em Location, colocar opção `Maven` em Build system, utilizar JDK 8 já instalado ou versao 1.8.0
+
+Caso opte por clonar este projeto utilizar: git clone https://github.com/gguilhermesantos/Testes_Automatizados_API
+
+## Rodando testes
+
+Para rodar testes, abrir qualquer arquivo dos testes em src > test > java
+Procurar tag `@Test` e clicar no icone de rodar teste
+
+## Comandos úteis
+
+### comandos GIT
+
+`git init` na pasta do projeto
+`git add .` para adicionar todos os arquivos
+`git add README.md` para adicionar o arquivo Readme.me
+`git commit -m "first commit"` criar comentario do commit
+`git config --global --edit` para editar o seu usuario e para configurar o repositório
+
+### Vim
+Comandos para Vi
 * :q – Fecha o arquivo e encerra o Vim
 * :wq – Salva as alterações, fecha o arquivo e encerra o Vim (junção dos comandos :w, que salva o arquivo, e :q para sair)
 * :q! – Descarta as alterações, fecha o arquivo e encerra o Vim
 
-Criar uma chave ssh:
+### Criar chave ssh
+
+```sh
 ssh-keygen -t ed25519 -C <email>
 eval "$(ssh-agent -s)"
 ssh-add --apple-use-keychain ~/.ssh/id_ed25519
-pbcopy < ~/.ssh/id_ed25519.pub. ai a chave vai ta no ctrl+V 
+pbcopy < ~/.ssh/id_ed25519.pub
+```
 Cola no GitHub
 
-git remote add origin URL-GERADA-PELO-GIT
-git push -u origin master
+### Caso não funcione acesso por ssh
 
-Como nao funcionou criar a chave
-https://www.doaction.com.br/en/blog/como-corrigir-o-erro-support-for-password-authentication-was-removed-please-use-a-personal-access-token-instead
+Caso não funcione o push opte por esse metodo: [Clique aqui] (https://www.doaction.com.br/en/blog/como-corrigir-o-erro-support-for-password-authentication-was-removed-please-use-a-personal-access-token-instead)
 
-vá em Settings e depois Developer Settings
-Clique em Personal access tokens e a seguir em Tokens (classic)
+vá em `Settings` e depois `Developer Settings`
+Clique em `Personal access tokens` e a seguir em `Tokens (classic)`
 Generate new token:
 Dê um nome para seu token em Note e a seguir marque os checkboxes para habilitar as permissões
 Gerar o token
 Agora, você deve copiar o seu token:
 A última etapa é adicionar o token recém copiado ao endereço do seu repositório remoto:
-git remote set-url origin https://{{TOKEN}}@github.com/{{gguilhermesantos}}/{{REPO}}
+`git remote set-url origin https://{{TOKEN}}@github.com/gguilhermesantos/Testes_Automatizados_API`
+`git push -u origin master`
+
+<p align="center">(<a href="#readme-top">Voltar para cima</a>)</p>
