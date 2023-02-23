@@ -21,9 +21,13 @@ Para começar um novo projeto no intelliJ:
 * Criar um nome
 * Ajustar pasta do projeto em **Location**
 * Colocar opção **Maven** em **Build system**
-* Utilizar **JDK 8** já instalado ou versão 1.8.0
+* Utilizar **JDK 8** já instalado ou **versão 1.8.0**
 
-Caso opte por clonar este projeto utilizar comando: `git clone https://github.com/gguilhermesantos/Testes_Automatizados_API`
+Caso opte por clonar este projeto utilizar comando:
+
+```sh
+git clone https://github.com/gguilhermesantos/Testes_Automatizados_API
+```
 
 ## Rodando testes
 
@@ -49,13 +53,14 @@ Comandos para Vi:
 
 ### Criar chave ssh
 
+Rodar comandos no terminal:
 ```sh
 ssh-keygen -t ed25519 -C <email>
 eval "$(ssh-agent -s)"
 ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 pbcopy < ~/.ssh/id_ed25519.pub
 ```
-Cola no GitHub
+Colar no GitHub
 
 ### Caso não funcione acesso por ssh
 
@@ -67,8 +72,11 @@ Caso não funcione o push opte por esse metodo: [Clique aqui](https://www.doacti
 * Dê um nome para seu token em Note e a seguir marque os checkboxes para habilitar as permissões
   - Gerar o token
 * Agora, você deve copiar o seu token:
-  - A última etapa é adicionar o token recém copiado ao endereço do seu repositório remoto:
-`git remote set-url origin https://{{TOKEN}}@github.com/gguilhermesantos/Testes_Automatizados_API`
-`git push -u origin master`
+  - A última etapa é adicionar o token recém copiado ao endereço do seu repositório remoto e assim subir alterações para o github:
+```
+git remote set-url origin https://{{TOKEN}}@github.com/gguilhermesantos/Testes_Automatizados_API
+git push -u origin master
+```
 
-<p align="center">(<a href="#readme-top">Voltar para cima</a>)</p>
+
+<p align="center">(<a href="#readme-top">Voltar ao topo</a>)</p>
