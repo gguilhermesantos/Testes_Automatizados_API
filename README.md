@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 # Testes Automatizados de API em Java
 
-Este projeto tem o intuito de aprender a configurar e desenvolver automação de API em Java.
+Este projeto tem o intuito de aprender a configurar e desenvolver automação de API com Rest Assured em Java.
 
 ## Inicializando
 
