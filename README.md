@@ -77,6 +77,29 @@ Caso não funcione o push opte por esse metodo: [Clique aqui](https://www.doacti
 git remote set-url origin https://{{TOKEN}}@github.com/gguilhermesantos/Testes_Automatizados_API
 git push -u origin master
 ```
+#### Próximos passos:
+
+Melhorar estrutura:
+https://github.com/maximilianoalves/restassured-arch-example
+
+validar assertions:
+```
+ Assertions.assertEquals(200, response.statusCode());
+        Assertions.assertEquals("qui est esse", response.jsonPath().getString("title[1]"));
+```
+
+como colocar dependecias extras no readme
+
+metodos de pegar dados:
+
+https://semaphoreci.com/community/tutorials/testing-rest-endpoints-using-rest-assured
+https://devqa.io/rest-assured-api-requests-examples/
+https://self-learning-java-tutorial.blogspot.com/2019/11/rest-assured-check-whether-field.html
+https://cursos.alura.com.br/forum/topico-diferenca-entre-assert-assertequals-e-assertequals-138335
+
+Colocar report
+
 
 
 <p align="center">(<a href="#readme-top">Voltar ao topo</a>)</p>
+
